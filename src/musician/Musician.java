@@ -4,12 +4,7 @@ import instrument.Instrument;
 
 public class Musician {
 
-    Instrument instrument;
-
-     public void startPlay(){
-        System.out.println("Берём в руки инструмент");
-        instrument.play();
-    }
+    private Instrument instrument;
 
     public Musician(Instrument instrument) {
         this.instrument = instrument;
@@ -17,5 +12,10 @@ public class Musician {
 
     public void setInstrument(Instrument instrument) {
         this.instrument = instrument;
+    }
+
+     public void startPlay(){
+        System.out.println("Берём в руки инструмент");
+        instrument.play();
     }
 }
